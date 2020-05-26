@@ -1,0 +1,19 @@
+/* =============
+  Section-5
+============= */
+#section-5 {
+    background-image: url('../img/section-5/Ford.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 521px;
+     @include md {
+        height: 522px;
+    }
+     @include lg {
+        height: 695px;
+    }
+     @include xl {
+        height: 795px;
+    }
+ }
+ 

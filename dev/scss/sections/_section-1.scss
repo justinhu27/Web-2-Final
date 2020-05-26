@@ -1,9 +1,15 @@
 /* =============
-    Section 1
+  Section-1
 ============= */
-#section-1{
-    .grid-content{
-        
-    }
+#section-1 {
 
-}
+    width: 100%;
+
+     @include lg {
+        height: 768px;
+    }
+     @include xl {
+        height: 871px;
+    }
+ }
+ 

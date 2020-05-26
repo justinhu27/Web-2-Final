@@ -7,7 +7,7 @@ html {
 
 /* ---------------- Media Queries ---------------- */
 /* =============
-    Variables
+   Variables
 ============= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -348,5 +348,243 @@ textarea {
     Footer
 ============= */
 /* =============
-    Section 1
+  Section-1
 ============= */
+#section-1 {
+  width: 100%; }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 768px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 871px; } }
+/* =============
+  Section-2
+============= */
+#section-2 {
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2-big ."; } }
+  @media (min-width: 1200px) {
+    #section-2 #section-2-big {
+      grid-area: section-2-big; } }
+  @media (min-width: 768px) {
+    #section-2 #section-2-big {
+      display: grid;
+      grid-template-columns: 35% auto;
+      grid-template-areas: "section-2-img ." "section-2-img section-2-container" "section-2-img .";
+      margin: 50px 0 50px; } }
+  @media (min-width: 992px) {
+    #section-2 #section-2-big {
+      grid-template-columns: 50% auto;
+      padding: 12px;
+      margin: 48px 0 48px 0; } }
+  #section-2 #section-2-big #section-2-img img {
+    width: 100%; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-big #section-2-img {
+      grid-area: section-2-img; } }
+  #section-2 #section-2-big #section-2-container {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-2-content ."; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-big #section-2-container {
+        grid-area: section-2-container; } }
+  #section-2 #section-2-big #section-2-content {
+    grid-area: section-2-content;
+    margin-bottom: 60px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-big #section-2-content {
+        text-align: left; } }
+    #section-2 #section-2-big #section-2-content h1 {
+      font-size: 1.5625rem;
+      line-height: 1.75rem; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-big #section-2-content h1 {
+          font-size: 2.1875rem;
+          line-height: 2.1875rem; } }
+    #section-2 #section-2-big #section-2-content h3 {
+      font-size: 1rem;
+      line-height: 1.5625rem; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-big #section-2-content {
+        margin-bottom: 0; } }
+/* =============
+   Section 3
+============= */
+#section-3 {
+  background-image: url("../img/section-3/Side.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px; }
+  @media (min-width: 768px) {
+    #section-3 {
+      height: 694px; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      height: 799px; } }
+  @media (min-width: 1200px) {
+    #section-3 {
+      height: 959px; } }
+/* =============
+   Section 4
+============= */
+#section-4 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: " . section-4 .";
+  margin: 45px 0 45px; }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto; } }
+  #section-4 #section-4-content {
+    grid-area: section-4; }
+    #section-4 #section-4-content h1 {
+      text-align: center;
+      font-size: 2.1875rem; }
+      @media (min-width: 992px) {
+        #section-4 #section-4-content h1 {
+          font-size: 2.8125rem; } }
+  #section-4 ul {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1;
+    gap: 20px;
+    grid-template-areas: "c1" "c2" "c3"; }
+    @media (min-width: 768px) {
+      #section-4 ul {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 2;
+        grid-template-areas: "c1 c2" "c3 c3";
+        justify-items: center;
+        gap: 30px; } }
+    @media (min-width: 992px) {
+      #section-4 ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        grid-template-areas: "c1 c2 c3";
+        grid-template-rows: initial; } }
+    #section-4 ul article {
+      background-color: #ECECEC;
+      padding: 10px; }
+      #section-4 ul article h2 {
+        text-align: center;
+        font-size: 1.5rem; }
+        @media (min-width: 992px) {
+          #section-4 ul article h2 {
+            font-size: 1.8rem; } }
+      #section-4 ul article p {
+        text-align: center;
+        font-size: 1rem; }
+        @media (min-width: 992px) {
+          #section-4 ul article p {
+            font-size: 1.2rem; } }
+      #section-4 ul article h5 {
+        text-align: left;
+        background-image: #ECECEC;
+        font-size: 0.875rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700; }
+        @media (min-width: 992px) {
+          #section-4 ul article h5 {
+            font-size: 1.05rem; } }
+    #section-4 ul #c1 {
+      grid-area: c1;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "aside" "article"; }
+      #section-4 ul #c1 aside {
+        background-image: url("../img/section-4/Exotic.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: aside;
+        width: 100%; }
+      #section-4 ul #c1 article {
+        grid-area: article;
+        background-color: #ECECEC; }
+      @media (min-width: 768px) {
+        #section-4 ul #c1 {
+          width: 300px; } }
+      @media (min-width: 992px) {
+        #section-4 ul #c1 {
+          width: 360px; } }
+    #section-4 ul #c2 {
+      grid-area: c2;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "aside" "article"; }
+      #section-4 ul #c2 aside {
+        background-image: url("../img/section-4/Super.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: aside;
+        width: 100%; }
+      #section-4 ul #c2 article {
+        grid-area: article; }
+      @media (min-width: 768px) {
+        #section-4 ul #c2 {
+          width: 300px; } }
+      @media (min-width: 992px) {
+        #section-4 ul #c2 {
+          width: 360px; } }
+    #section-4 ul #c3 {
+      grid-area: c3;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "aside" "article"; }
+      #section-4 ul #c3 aside {
+        background-image: url("../img/section-4/Hollywood.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: aside;
+        width: 100%; }
+      #section-4 ul #c3 article {
+        grid-area: article; }
+      @media (min-width: 768px) {
+        #section-4 ul #c3 {
+          width: 300px; } }
+      @media (min-width: 992px) {
+        #section-4 ul #c3 {
+          width: 360px; } }
+    #section-4 ul #c4 {
+      grid-area: c4;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "aside" "article"; }
+      #section-4 ul #c4 aside {
+        background-image: url("../img/section-4/Classic.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: aside;
+        width: 100%; }
+      #section-4 ul #c4 article {
+        grid-area: article; }
+      @media (min-width: 768px) {
+        #section-4 ul #c4 {
+          width: 300px; } }
+      @media (min-width: 992px) {
+        #section-4 ul #c4 {
+          width: 360px; } }
+/* =============
+  Section-5
+============= */
+#section-5 {
+  background-image: url("../img/section-5/Ford.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 521px; }
+  @media (min-width: 768px) {
+    #section-5 {
+      height: 522px; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      height: 695px; } }
+  @media (min-width: 1200px) {
+    #section-5 {
+      height: 795px; } }
