@@ -1,0 +1,18 @@
+/* =============
+  Section-6
+============= */
+#section-6 {
+    background-image: url('../img/section-6/Map.png');
+    background-size: cover;
+    background-position: center;
+    height: 521px;
+     @include md {
+        height: 522px;
+    }
+     @include lg {
+        height: 695px;
+    }
+     @include xl {
+        height: 795px;
+    }
+ }

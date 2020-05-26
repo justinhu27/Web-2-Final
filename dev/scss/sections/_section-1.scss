@@ -4,7 +4,10 @@
 #section-1 {
 
     width: 100%;
-
+background-image: url("../img/section-1/Hero.jpg");
+  height:500px;
+  background-size: cover;
+  
      @include lg {
         height: 768px;
     }

@@ -4,13 +4,25 @@
  
 #section-3 {
   
+
+ }
+ 
+#section-3 {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-3 .";
+    text-align: center;
+    margin: 50px 0 50px;
+
     background-image: url("../img/section-3/Side.jpg");
     background-position: center;
     background-size: cover;
     height: 400px;
   
+  
     @include md {
         height: 694px;
+        grid-template-columns: 10% auto 10%;
     }
   
     @include lg {
@@ -20,5 +32,24 @@
     @include xl {
         height: 959px;
     }
- }
+    
+    
+     #section-3-content {
+        grid-area: section-3;
+  
+        h1 {
+            font-size: rem-calc(26);
+            line-height: rem-calc(32);
+             @include md {
+                font-size: rem-calc(35);
+                line-height: rem-calc(50);
+            }
+             @include lg {
+                font-size: rem-calc(52);
+                line-height: rem-calc(62);
+            }
+        }
+       
+    }
+  }
  
