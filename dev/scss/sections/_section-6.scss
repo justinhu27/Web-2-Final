@@ -5,14 +5,13 @@
     background-image: url('../img/section-6/Map.png');
     background-size: cover;
     background-position: center;
-    height: 521px;
-     @include md {
-        height: 522px;
+    height: 400px;
+    
+    @include md {
+        height: 572px;
     }
      @include lg {
-        height: 695px;
+        height: 572px;
     }
-     @include xl {
-        height: 795px;
-    }
+   
  }

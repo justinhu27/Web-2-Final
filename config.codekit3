@@ -19,6 +19,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/footer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/footer.html",
+		"oF": 0
+		},
 	"/deploy/header.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -38,6 +46,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/header/Logo1.png": {
+		"ft": 32768,
+		"iS": 19718,
+		"oA": 0,
+		"oAP": "/deploy/img/header/Logo1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-1/Hero.jpg": {
 		"ft": 16384,
 		"iS": 360658,
@@ -47,6 +66,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-1/Hero1.png": {
+		"ft": 32768,
+		"iS": 94389,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/Hero1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-1/Hero2.png": {
+		"ft": 32768,
+		"iS": 350910,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/Hero2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-2/Display.jpg": {
@@ -60,6 +101,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-2/Display1.png": {
+		"ft": 32768,
+		"iS": 58784,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/Display1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-2/Display2.png": {
+		"ft": 32768,
+		"iS": 291391,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/Display2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-3/Side.jpg": {
 		"ft": 16384,
 		"iS": 38065,
@@ -69,6 +132,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/Side1.png": {
+		"ft": 32768,
+		"iS": 23621,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/Side1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/Side2.png": {
+		"ft": 32768,
+		"iS": 80747,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/Side2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/Classic.jpg": {
@@ -82,6 +167,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-4/Classic1.png": {
+		"ft": 32768,
+		"iS": 42292,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/Classic1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-4/Exotic.jpg": {
 		"ft": 16384,
 		"iS": 463875,
@@ -93,11 +189,33 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-4/Exotic1.png": {
+		"ft": 32768,
+		"iS": 29055,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/Exotic1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-4/Hollywood.png": {
 		"ft": 32768,
 		"iS": 261938,
 		"oA": 0,
 		"oAP": "/deploy/img/section-4/Hollywood.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-4/Hollywood1.png": {
+		"ft": 32768,
+		"iS": 41532,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/Hollywood1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -115,6 +233,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-4/Super1.png": {
+		"ft": 32768,
+		"iS": 33958,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/Super1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-5/Ford.jpg": {
 		"ft": 16384,
 		"iS": 281518,
@@ -126,11 +255,55 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-5/Ford1.png": {
+		"ft": 32768,
+		"iS": 37229,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/Ford1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-5/Ford2.png": {
+		"ft": 32768,
+		"iS": 152147,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/Ford2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-6/Map.png": {
 		"ft": 32768,
 		"iS": 239926,
 		"oA": 0,
 		"oAP": "/deploy/img/section-6/Map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-6/Map1.png": {
+		"ft": 32768,
+		"iS": 40910,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/Map1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-6/Map2.png": {
+		"ft": 32768,
+		"iS": 151017,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/Map2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

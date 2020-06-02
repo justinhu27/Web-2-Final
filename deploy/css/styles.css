@@ -325,6 +325,9 @@ ul {
 /* =============
     Typography
 ============= */
+h1 {
+  font-family: bebas-neue, sans-serif; }
+
 /* =============
     Buttons
 ============= */
@@ -347,25 +350,75 @@ textarea {
     Navigation
 ============= */
 /* =============
-    Header
+  Header
 ============= */
+header {
+  background-color: #fff;
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 1.5625rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "navi navi";
+    grid-template-columns: 80% auto; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "logo navi";
+        grid-template-columns: 20% auto; } }
+    header > div #logo-container {
+      grid-area: logo;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #logo-container {
+          align-items: center;
+          display: flex; } }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 768px) {
+        header > div #burger-container {
+          display: none !important; } }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #fff;
+      display: none;
+      grid-area: navi;
+      padding: 0 20px 0; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: #fff;
+          display: block !important;
+          padding: 20px; } }
 /* =============
     Footer
 ============= */
 /* =============
-  Section-1
+   Section-1
 ============= */
 #section-1 {
-  width: 100%;
   background-image: url("../img/section-1/Hero.jpg");
-  height: 500px;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  height: 371px; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 509px; } }
   @media (min-width: 992px) {
     #section-1 {
-      height: 768px; } }
+      height: 515px; } }
   @media (min-width: 1200px) {
     #section-1 {
-      height: 871px; } }
+      height: 458px; } }
 /* =============
   Section-2
 ============= */
@@ -435,11 +488,10 @@ textarea {
   background-image: url("../img/section-3/Side.jpg");
   background-position: center;
   background-size: cover;
-  height: 400px; }
+  height: 777px; }
   @media (min-width: 768px) {
     #section-3 {
-      height: 694px;
-      grid-template-columns: 10% auto 10%; } }
+      height: 459px; } }
   @media (min-width: 992px) {
     #section-3 {
       height: 799px; } }
@@ -447,7 +499,8 @@ textarea {
     #section-3 {
       height: 959px; } }
   #section-3 #section-3-content {
-    grid-area: section-3; }
+    grid-area: section-3;
+    color: #fff; }
     #section-3 #section-3-content h1 {
       font-size: 1.625rem;
       line-height: 2rem; }
@@ -483,19 +536,19 @@ textarea {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1;
     gap: 20px;
-    grid-template-areas: "c1" "c2" "c3"; }
+    grid-template-areas: "c1" "c2" "c3" "c4"; }
     @media (min-width: 768px) {
       #section-4 ul {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 2;
-        grid-template-areas: "c1 c2" "c3 c3";
+        grid-template-areas: "c1" "c2" "c3" "c4";
         justify-items: center;
         gap: 30px; } }
     @media (min-width: 992px) {
       #section-4 ul {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1;
-        grid-template-areas: "c1 c2 c3";
+        grid-template-areas: "c1 c2 c3 c4";
         grid-template-rows: initial; } }
     #section-4 ul article {
       background-color: #ECECEC;
@@ -527,7 +580,7 @@ textarea {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "aside" "article"; }
       #section-4 ul #c1 aside {
-        background-image: url("../img/section-4/Exotic.jpg");
+        background-image: url("../img/section-4/Exotic1.png");
         background-repeat: no-repeat;
         background-size: cover;
         grid-area: aside;
@@ -547,7 +600,7 @@ textarea {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "aside" "article"; }
       #section-4 ul #c2 aside {
-        background-image: url("../img/section-4/Super.jpg");
+        background-image: url("../img/section-4/Super1.png");
         background-repeat: no-repeat;
         background-size: cover;
         grid-area: aside;
@@ -566,7 +619,7 @@ textarea {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "aside" "article"; }
       #section-4 ul #c3 aside {
-        background-image: url("../img/section-4/Hollywood.png");
+        background-image: url("../img/section-4/Hollywood1.png");
         background-repeat: no-repeat;
         background-size: cover;
         grid-area: aside;
@@ -585,7 +638,7 @@ textarea {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "aside" "article"; }
       #section-4 ul #c4 aside {
-        background-image: url("../img/section-4/Classic.jpg");
+        background-image: url("../img/section-4/Classic1.png");
         background-repeat: no-repeat;
         background-size: cover;
         grid-area: aside;
@@ -605,16 +658,13 @@ textarea {
   background-image: url("../img/section-5/Ford.jpg");
   background-size: cover;
   background-position: center;
-  height: 521px; }
+  height: 273px; }
   @media (min-width: 768px) {
     #section-5 {
-      height: 522px; } }
+      height: 273px; } }
   @media (min-width: 992px) {
     #section-5 {
-      height: 695px; } }
-  @media (min-width: 1200px) {
-    #section-5 {
-      height: 795px; } }
+      height: 379px; } }
 /* =============
   Section-6
 ============= */
@@ -622,13 +672,10 @@ textarea {
   background-image: url("../img/section-6/Map.png");
   background-size: cover;
   background-position: center;
-  height: 521px; }
+  height: 400px; }
   @media (min-width: 768px) {
     #section-6 {
-      height: 522px; } }
+      height: 572px; } }
   @media (min-width: 992px) {
     #section-6 {
-      height: 695px; } }
-  @media (min-width: 1200px) {
-    #section-6 {
-      height: 795px; } }
+      height: 572px; } }

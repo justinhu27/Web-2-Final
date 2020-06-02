@@ -1,18 +1,24 @@
 /* =============
-  Section-1
+   Section-1
 ============= */
+ 
 #section-1 {
-
-    width: 100%;
-background-image: url("../img/section-1/Hero.jpg");
-  height:500px;
+  background-image: url('../img/section-1/Hero.jpg');
   background-size: cover;
-  
-     @include lg {
-        height: 768px;
-    }
-     @include xl {
-        height: 871px;
-    }
- }
+  background-position: center;
+  height: 371px;
+
+  @include md {
+      height: 509px;
+  }
+
+  @include lg {
+      height: 515px;
+  }
+
+  @include xl {
+      height: 458px;
+  }
+}
+
  
