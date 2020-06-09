@@ -1,62 +1,75 @@
 /* =============
-  Header
+   Header
 ============= */
+ 
 header {
-    background-color: $blue;
-    font-family: 'bebas-neue', sans-serif;
-    font-size: rem-calc(25);
+    font-family: bebas-neue, sans-serif;
+    font-size: rem-calc(23);
+    background-color: $white;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    
-     >div {
+    z-index: 600;
+  
+    >div {
+      
         display: grid;
-        grid-template-areas:
-            "logo burger"
+        grid-template-areas: "logo burger"
             "navi navi";
         grid-template-columns: 80% auto;
+  
         @include lg {
             grid-template-areas: "logo navi";
             grid-template-columns: 20% auto;
+            height: auto;
         }
-         #logo-container {
+  
+        #logo-container {
             grid-area: logo;
             padding: 20px;
-            @include lg {
-                align-items: center;
-                display: flex;
+            height: 45px;
+  
+            @include lg{
+                height: auto;
+            }
+            img{
+                height: 40px;
+  
+                @include lg{
+                    height: auto;
+                }
             }
         }
-         #burger-container {
+  
+        #burger-container {
             align-items: center;
             display: flex;
             grid-area: burger;
             justify-content: flex-end;
             padding: 20px;
-            
-            @include md {
-                display: none !important;
-            }
-
+  
             @include lg {
                 display: none !important;
             }
-             i {
+  
+            i {
                 cursor: pointer;
             }
         }
-         #nav-container {
-            background-color: $blue;
+  
+        #nav-container {
+            background-color: $white;
             display: none;
             grid-area: navi;
             padding: 0 20px 0;
-             @include lg {
-                background-color: $blue;
+  
+            @include lg {
+                background-color: $white;
                 display: block !important;
-                padding: 20px;
             }
         }
     }
  }
+ 
  
