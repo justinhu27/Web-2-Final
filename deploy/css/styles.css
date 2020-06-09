@@ -429,8 +429,11 @@ header {
     #section-1 {
       height: 458px;
       margin-top: 120px; } }
-hr.solid {
-  border-top: 41px solid #AAD600; }
+  #section-1 hr {
+    border-width: 0px;
+    height: 41px;
+    background-color: #AAD600;
+    margin-bottom: 10px; }
 
 /* =============
    Section 2
@@ -444,6 +447,17 @@ hr.solid {
     display: grid;
     grid-template-areas: ". section-2-lock ."; } }
 
+#section-2 hr {
+  border-width: 0px;
+  height: 21px;
+  background-color: #AAD600;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    #section-2 hr {
+      height: 18px; } }
+  @media (min-width: 992px) {
+    #section-2 hr {
+      height: 25px; } }
 @media (min-width: 768px) {
   #section-2 #section-2-lock {
     display: grid;
@@ -515,6 +529,17 @@ hr.solid {
   background-position: center;
   background-size: cover;
   height: 777px; }
+  #section-3 hr {
+    border-width: 0px;
+    height: 21px;
+    background-color: #AAD600;
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      #section-3 hr {
+        height: 18px; } }
+    @media (min-width: 992px) {
+      #section-3 hr {
+        height: 25px; } }
   @media (min-width: 1200px) {
     #section-3 {
       display: grid;
@@ -617,6 +642,20 @@ hr.solid {
   @media (min-width: 1200px) {
     #section-4 {
       grid-template-columns: auto 1200px auto; } }
+  #section-4 hr {
+    border-width: 0px;
+    height: 21px;
+    background-color: #018BB7;
+    margin-bottom: 10px;
+    margin-top: 164px; }
+    @media (min-width: 768px) {
+      #section-4 hr {
+        height: 18px;
+        margin-top: 92px; } }
+    @media (min-width: 992px) {
+      #section-4 hr {
+        height: 25px;
+        margin-top: 98px; } }
   #section-4 #section-4-content {
     grid-area: section-4; }
     #section-4 #section-4-content h1 {
@@ -746,30 +785,79 @@ hr.solid {
         #section-4 ul #c4 {
           width: 360px; } }
 /* =============
-  Section-5
+   Section 5
 ============= */
-#section-5 {
-  background-image: url("../img/section-5/Ford.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 273px; }
+@media (min-width: 1200px) {
+  #section-5 {
+    grid-template-columns: auto 1200px auto; } }
+
+#section-5 aside img {
+  width: 100%; }
+
+#section-5 hr {
+  border-width: 0px;
+  height: 21px;
+  background-color: #018BB7;
+  margin-bottom: 10px; }
   @media (min-width: 768px) {
-    #section-5 {
-      height: 273px; } }
+    #section-5 hr {
+      height: 18px; } }
   @media (min-width: 992px) {
-    #section-5 {
-      height: 379px; } }
+    #section-5 hr {
+      height: 25px; } }
+#section-5 h1 {
+  text-align: center;
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    #section-5 h1 {
+      font-size: 3rem; } }
+  @media (min-width: 992px) {
+    #section-5 h1 {
+      font-size: 3.75rem; } }
+#section-5 h2 {
+  text-align: center;
+  font-size: 1.875rem; }
+
+#section-5 #section-5-container {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". section-5 ."; }
+  @media (min-width: 768px) {
+    #section-5 #section-5-container {
+      grid-template-columns: 50px auto 50px; } }
+  @media (min-width: 992px) {
+    #section-5 #section-5-container {
+      grid-template-columns: 100px auto 100px; } }
+  #section-5 #section-5-container #section-5-content {
+    grid-area: section-5; }
+
 /* =============
-  Section-6
+   Section 6
 ============= */
-#section-6 {
-  background-image: url("../img/section-6/Map.png");
-  background-size: cover;
-  background-position: center;
-  height: 400px; }
+@media (min-width: 1200px) {
+  #section-6 {
+    grid-template-columns: auto 1200px auto; } }
+
+#section-6 aside img {
+  width: 100%; }
+
+#section-6 hr {
+  border-width: 0px;
+  height: 21px;
+  background-color: #FF4402;
+  margin-bottom: 10px; }
   @media (min-width: 768px) {
-    #section-6 {
-      height: 572px; } }
+    #section-6 hr {
+      height: 18px; } }
   @media (min-width: 992px) {
-    #section-6 {
-      height: 572px; } }
+    #section-6 hr {
+      height: 25px; } }
+#section-6 h1 {
+  text-align: center;
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    #section-6 h1 {
+      font-size: 3rem; } }
+  @media (min-width: 992px) {
+    #section-6 h1 {
+      font-size: 3.75rem; } }

@@ -4,7 +4,22 @@
  
 #section-3 {
  
+    hr {
+        border-width: 0px;
+        height: 21px;
+        background-color: $green;
+        margin-bottom: 10px;
     
+        @include md {
+          height: 18px;
+      }
+    
+      @include lg {
+          height: 25px;
+      }
+       
+      }
+
     @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
@@ -61,7 +76,10 @@
             @include lg {
                 height: 460px;
             }
+      
+
     
+      
         }
      
      

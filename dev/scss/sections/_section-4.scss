@@ -13,6 +13,25 @@
     @include xl {
         grid-template-columns: auto 1200px auto;
     }
+
+    hr {
+        border-width: 0px;
+        height: 21px;
+        background-color: $blue;
+        margin-bottom: 10px;
+        margin-top: 164px;
+    
+        @include md {
+          height: 18px;
+          margin-top: 92px;
+      }
+    
+      @include lg {
+          height: 25px;
+          margin-top: 98px;
+      }
+       
+      }
   
     #section-4-content {
         grid-area: section-4;

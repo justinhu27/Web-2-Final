@@ -18,9 +18,15 @@
         height: 458px;
         margin-top: 120px;
     }
+
+    hr {
+        border-width: 0px;
+        height: 41px;
+        background-color: $green;
+        margin-bottom: 10px;
+       
+      }
  }
  
- hr.solid {
-    border-top: 41px solid #AAD600;
-  }
+
  

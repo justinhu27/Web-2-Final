@@ -13,6 +13,22 @@
         grid-template-areas: ". section-2-lock .";
     }
   
+    hr {
+        border-width: 0px;
+        height: 21px;
+        background-color: $green;
+        margin-bottom: 10px;
+    
+        @include md {
+          height: 18px;
+      }
+    
+      @include lg {
+          height: 25px;
+      }
+       
+      }
+      
     #section-2-lock {
   
         @include md {
