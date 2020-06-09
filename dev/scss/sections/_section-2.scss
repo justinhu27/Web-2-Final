@@ -1,75 +1,97 @@
 /* =============
-  Section-2
+   Section-2
 ============= */
+ 
 #section-2 {
-    margin-top: 60px;
-    margin-bottom: 30px;
-     @include xl {
-        display: grid;
+ 
+  
+    @include xl {
         grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". section-2-big .";
     }
-     #section-2-big {
-        @include xl {
-            grid-area: section-2-big;
-        }
-         @include md {
-            display: grid;
-            grid-template-columns: 35% auto;
-            grid-template-areas:
-                "section-2-img ."
-                "section-2-img section-2-container"
-                "section-2-img .";
-            margin: 50px 0 50px;
-        }
-         @include lg {
-            grid-template-columns: 50% auto;
-            padding: 12px;
-            margin: 48px 0 48px 0;
-         }
-         #section-2-img {
-            img {
-                width: 100%;
-            }
-             ;
-             @include md {
-                grid-area: section-2-img;
-            }
-        }
-         #section-2-container {
-            display: grid;
-            grid-template-columns: 15px auto 15px;
-            grid-template-areas: ". section-2-content .";
-             @include md {
-                grid-area: section-2-container;
-            }
-        }
-         #section-2-content {
-            grid-area: section-2-content;
-            margin-bottom: 60px;
+  
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-2 .";
+  
+    #section-2-content {
+        grid-area: section-2;
+        position: relative;
+        z-index: 500;
+  
+  
+        h1 {
             text-align: center;
-             @include md {
-                text-align: left;
-            }
-             h1 {
-                font-size: rem-calc(25);
-                line-height: rem-calc(28);
-                 @include md {
-                    font-size: rem-calc(35);
-                    line-height: rem-calc(35);
-                }
-            }
-             h3 {
-                font-size: rem-calc(16);
-                line-height: rem-calc(25);
-            }
-             @include md {
-                margin-bottom: 0;
-         
+            @include md {
+               text-align: left;
+           }
+
+            font-size: rem-calc(36);
+            color: $black;
+  
+            @include md {
+                font-size: rem-calc(48);
             }
         }
+  
+
+        p {
+            text-align: left;
+            font-size: rem-calc(14);
+            line-height: rem-calc(30);
+            color: $black;
+  
+            @include md {
+                
+                margin-right: 37px;
+                font-size: rem-calc(22);
+                line-height: rem-calc(30);
+            }
+  
+            @include lg {
+                padding-right: 37px;
+                font-size: rem-calc(26);
+                line-height: rem-calc(34);
+                padding-left: 17px;
+            }
+        }
+  
+        aside {
+            background-image: url('../img/section-2/Display2.png');
+            background-position: center;
+            background-size: cover;
+            height: 414px;
+            width: 322px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+  
+            @include md {
+                grid-area: display;
+                height: 502px;
+                width: 390px;
+                margin-top: 28px;
+            }
+  
+            @include lg {
+                margin-top: 30px;
+            }
+        }
+  
+        #section-2-md {
+            @include md {
+                display: grid;
+                grid-template-columns: 60% auto;
+                grid-template-areas:
+                    "p display";
+                    
+  
+            }
+  
+        }
     }
+  
  }
+ 
  
  
  

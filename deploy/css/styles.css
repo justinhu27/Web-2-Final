@@ -328,6 +328,14 @@ ul {
 h1 {
   font-family: bebas-neue, sans-serif; }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+
 /* =============
     Buttons
 ============= */
@@ -353,7 +361,7 @@ textarea {
   Header
 ============= */
 header {
-  background-color: #fff;
+  background-color: #018BB7;
   font-family: 'bebas-neue', sans-serif;
   font-size: 1.5625rem;
   left: 0;
@@ -390,13 +398,13 @@ header {
       header > div #burger-container i {
         cursor: pointer; }
     header > div #nav-container {
-      background-color: #fff;
+      background-color: #018BB7;
       display: none;
       grid-area: navi;
       padding: 0 20px 0; }
       @media (min-width: 992px) {
         header > div #nav-container {
-          background-color: #fff;
+          background-color: #018BB7;
           display: block !important;
           padding: 20px; } }
 /* =============
@@ -422,62 +430,68 @@ hr.solid {
   border-top: 41px solid #AAD600; }
 
 /* =============
-  Section-2
+   Section-2
 ============= */
 #section-2 {
-  margin-top: 60px;
-  margin-bottom: 30px; }
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-2 ."; }
   @media (min-width: 1200px) {
     #section-2 {
-      display: grid;
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". section-2-big ."; } }
-  @media (min-width: 1200px) {
-    #section-2 #section-2-big {
-      grid-area: section-2-big; } }
-  @media (min-width: 768px) {
-    #section-2 #section-2-big {
-      display: grid;
-      grid-template-columns: 35% auto;
-      grid-template-areas: "section-2-img ." "section-2-img section-2-container" "section-2-img .";
-      margin: 50px 0 50px; } }
-  @media (min-width: 992px) {
-    #section-2 #section-2-big {
-      grid-template-columns: 50% auto;
-      padding: 12px;
-      margin: 48px 0 48px 0; } }
-  #section-2 #section-2-big #section-2-img img {
-    width: 100%; }
-  @media (min-width: 768px) {
-    #section-2 #section-2-big #section-2-img {
-      grid-area: section-2-img; } }
-  #section-2 #section-2-big #section-2-container {
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-2-content ."; }
-    @media (min-width: 768px) {
-      #section-2 #section-2-big #section-2-container {
-        grid-area: section-2-container; } }
-  #section-2 #section-2-big #section-2-content {
-    grid-area: section-2-content;
-    margin-bottom: 60px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      #section-2 #section-2-big #section-2-content {
-        text-align: left; } }
-    #section-2 #section-2-big #section-2-content h1 {
-      font-size: 1.5625rem;
-      line-height: 1.75rem; }
+      grid-template-columns: auto 1200px auto; } }
+  #section-2 #section-2-content {
+    grid-area: section-2;
+    position: relative;
+    z-index: 500; }
+    #section-2 #section-2-content h1 {
+      text-align: center;
+      font-size: 2.25rem;
+      color: #080808; }
       @media (min-width: 768px) {
-        #section-2 #section-2-big #section-2-content h1 {
-          font-size: 2.1875rem;
-          line-height: 2.1875rem; } }
-    #section-2 #section-2-big #section-2-content h3 {
-      font-size: 1rem;
-      line-height: 1.5625rem; }
+        #section-2 #section-2-content h1 {
+          text-align: left; } }
+      @media (min-width: 768px) {
+        #section-2 #section-2-content h1 {
+          font-size: 3rem; } }
+    #section-2 #section-2-content p {
+      text-align: left;
+      font-size: 0.875rem;
+      line-height: 1.875rem;
+      color: #080808; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-content p {
+          margin-right: 37px;
+          font-size: 1.375rem;
+          line-height: 1.875rem; } }
+      @media (min-width: 992px) {
+        #section-2 #section-2-content p {
+          padding-right: 37px;
+          font-size: 1.625rem;
+          line-height: 2.125rem;
+          padding-left: 17px; } }
+    #section-2 #section-2-content aside {
+      background-image: url("../img/section-2/Display2.png");
+      background-position: center;
+      background-size: cover;
+      height: 414px;
+      width: 322px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-content aside {
+          grid-area: display;
+          height: 502px;
+          width: 390px;
+          margin-top: 28px; } }
+      @media (min-width: 992px) {
+        #section-2 #section-2-content aside {
+          margin-top: 30px; } }
     @media (min-width: 768px) {
-      #section-2 #section-2-big #section-2-content {
-        margin-bottom: 0; } }
+      #section-2 #section-2-content #section-2-md {
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-areas: "p display"; } }
 /* =============
    Section-3
 ============= */
@@ -513,17 +527,20 @@ hr.solid {
           #section-3 #section-3-container #section-3-when h1 {
             font-size: 2.625rem; } }
       #section-3 #section-3-container #section-3-when h3 {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         color: #080808;
+        line-height: 2.5rem;
         font-weight: 400; }
         @media (min-width: 768px) {
           #section-3 #section-3-container #section-3-when h3 {
-            font-size: 1.375rem; }
+            font-size: 1rem;
+            line-height: 3.125rem; }
             #section-3 #section-3-container #section-3-when h3 span {
               font-weight: 700; } }
         @media (min-width: 992px) {
           #section-3 #section-3-container #section-3-when h3 {
-            font-size: 1.75rem; } }
+            font-size: 1.125rem;
+            line-height: 3.125rem; } }
       @media (min-width: 768px) {
         #section-3 #section-3-container #section-3-when {
           grid-area: when;
@@ -541,17 +558,20 @@ hr.solid {
           #section-3 #section-3-container #section-3-price h1 {
             font-size: 2.625rem; } }
       #section-3 #section-3-container #section-3-price h3 {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         color: #080808;
+        line-height: 2.0625rem;
         font-weight: 400; }
         #section-3 #section-3-container #section-3-price h3 span {
           font-weight: 700; }
         @media (min-width: 768px) {
           #section-3 #section-3-container #section-3-price h3 {
-            font-size: 1.375rem; } }
+            font-size: 1rem;
+            line-height: 2.3125rem; } }
         @media (min-width: 992px) {
           #section-3 #section-3-container #section-3-price h3 {
-            font-size: 1.75rem; } }
+            font-size: 1.125rem;
+            line-height: 2.3125rem; } }
 /* =============
    Section 4
 ============= */
